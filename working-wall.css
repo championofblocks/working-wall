@@ -24,3 +24,8 @@ canvas {
   height: 150px;
   width:  150px;
 }
+
+body {
+  background: lightyellow;
+  font-family: courier, monospace;
+}
