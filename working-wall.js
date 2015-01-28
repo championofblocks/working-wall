@@ -21,7 +21,7 @@ if (Meteor.isClient) {
     function snapshot() {
       if (localMediaStream) {
         ctx.drawImage(video, 0, 0, 400, 150);
-        Pictures.insert({url: canvas.toDataURL('image/webp'), date_added: new Date});
+        Pictures.insert({url: canvas.toDataURL('image/png'), date_added: new Date});
         video.src = window.URL.createObjectURL(localMediaStream);
       }
     }
