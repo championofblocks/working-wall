@@ -1,0 +1,21 @@
+<head>
+  <title>Working Wall</title>
+</head>
+
+<body>
+  {{> pictures}}
+</body>
+
+
+
+<template name="pictures">
+  <ul>
+    <li class="main-picture">
+      <video autoplay height="150px"></video>
+      <canvas style="display:none;"></canvas>
+    </li>
+    {{#each pictures}}
+      <li><img src="{{url}}" /></li>
+    {{/each}}
+  </ul>
+</template>
