@@ -8,6 +8,7 @@ if (Meteor.isClient) {
   });
 
   Template.pictures.rendered = function() {
+    GAnalytics.pageview();
     var video = document.querySelector('video');
     var canvas = document.querySelector('canvas');
     var ctx = canvas.getContext('2d');
