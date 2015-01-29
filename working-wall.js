@@ -1,11 +1,9 @@
 Pictures = new Mongo.Collection("pictures");
 
 if (Meteor.isClient) {
-  Session.setDefault("counter", 0);
-
   Template.pictures.helpers({
     pictures: function () {
-      return Pictures.find({}, {sort: {'date_added': -1}, limit: 50});
+      return Pictures.find({}, {sort: {'date_added': -1}, limit: 30});
     }
   });
 
