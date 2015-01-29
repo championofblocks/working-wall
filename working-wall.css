@@ -29,3 +29,41 @@ body {
   background: lightyellow;
   font-family: courier, monospace;
 }
+
+a.social:visited {
+  color: #FFF;
+}
+
+a.twitter:visited {
+  color: #2D6491;
+}
+
+.social {
+  padding: 10px;
+  margin: 20px;
+}
+
+.socialshares {
+  text-align: center;
+  margin: 20px;
+}
+
+.facebook {
+  background-color: #3C5A98;
+  color: #FFF;
+}
+
+.twitter {
+  background-color: #DBF7F8;
+  color: #2D6491;
+}
+
+.google {
+  background-color: #D14836;
+  color: #FFF;
+}
+
+.linkedin {
+  background-color: #185C80;
+  color: #FFF;
+}

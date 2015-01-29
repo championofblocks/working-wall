@@ -7,9 +7,6 @@ if (Meteor.isClient) {
     }
   });
 
-  Template.pictures.events({
-  });
-
   Template.pictures.rendered = function() {
     var video = document.querySelector('video');
     var canvas = document.querySelector('canvas');
